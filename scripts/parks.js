@@ -14,6 +14,12 @@ window.onload = () => {
   loadLocationDataList();
 }
  
+function buildLocationDataList(location) {
+  let table = document.createElement("table");
+    
+  }
+
+
 // const nationalParkDataArray = document.getElementById("nationalParkList");
 
 // function loadNationalParkList(params) {}
