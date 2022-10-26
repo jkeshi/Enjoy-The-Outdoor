@@ -1,5 +1,8 @@
+"use strict";
+
 const locationsDataArray = document.getElementById("locationDatalist");
 const nationalParkDataArray = document.getElementById("nationalParkList");
+const nationalParktableBody = document.getElementById("nationalParktableBody");
 
 function loadLocationDataList() {
   //collection
@@ -11,7 +14,11 @@ function loadLocationDataList() {
 
 window.onload = () => {
   loadLocationDataList();
+  loadSearchType();
+  onclick = loadSearchType;
+  nationalParkDataArray.onchange = loadTableBody;
 };
+
 
 function buildLocationDataRow(tableBody, nationalPark) {
   let row = tableBody.insertRow(-1);
