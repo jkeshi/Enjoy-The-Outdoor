@@ -1,3 +1,9 @@
-body {
-background-color: antiquewhite;
+#bg-img-text {
+  background-image: url("../Enjoy-The-Outdoor/images/CDome-StoryImage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 12em;
+  width: auto;
+  display: flex;
 }
+
