@@ -22,6 +22,7 @@ function loadMountainInfo() {
   });
 }
 
+
 function buildMountainCard(section, mountain) {
   //create col div for BS
   let colDiv = document.createElement("div");
