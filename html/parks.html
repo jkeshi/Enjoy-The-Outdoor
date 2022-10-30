@@ -13,15 +13,7 @@
   </head>
   <body>
     <h1>Enjoy The Out Door</h1>
-    <select
-      name="locationDataList"
-      id="locationDataList"
-      onchange="loadParkData();"
-    >
-      <option value="">Select One</option>
-    </select>
     <main class="container">
-      <h1>National Park</h1>
       <div>
         <input
           type="radio"
@@ -30,13 +22,21 @@
           value="by-location"
         />
         <label for="by-location">Locations</label>
+
         <input type="radio" name="by-select" id="byTypeField" value="by-type" />
         <label for="by-type">Parks</label>
       </div>
 
-      <label id="labelChange" for="labelChange">Choose Button</label>
-      <select onchange = loadTableBody(); name="locationParkDataArray" id="locationParkDataArray"></select>
-    
+      <select
+        name="locationDataList"
+        id="locationDataList"
+      >
+      </select>
+      <!-- <select
+        onchange="loadTableBody();"
+        name="locationParkDataArray"
+        id="locationParkDataArray"
+      ></select> -->
 
       <table class="table">
         <thead>
@@ -49,6 +49,8 @@
             <th>Phone</th>
           </tr>
         </thead>
+        <tbody id="nationalParkResultsTableBody">
+        </tbody>
       </table>
     </main>
     <script
@@ -56,10 +58,16 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <script src="./scripts/locationData.js"></script>
+    <!-- <script src="./scripts/locationData.js"></script>
     <script src="./scripts/parkTypeData.js"></script>
     <script src="./scripts/nationalParkData.js"></script>
     <script src="./scripts/parks.js"></script>
-    <script src="./style.css"></script>
+    <script src="./style.css"></script> -->
+
+    <script src="../scripts/locationData.js"></script>
+    <script src="../scripts/parkTypeData.js"></script>
+    <script src="../scripts/nationalParkData.js"></script>
+    <script src="../scripts/parks.js"></script>
+    <script src="../style.css"></script>
   </body>
 </html>
