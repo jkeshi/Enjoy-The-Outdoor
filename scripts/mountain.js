@@ -25,15 +25,15 @@ function loadMountainInfo() {
 
 
 function buildMountainCard(section, mountain) {
-  
+ 
   let colDiv = document.createElement("div");
   colDiv.className = "col";
 
-]
+  //created the card
   const div = document.createElement("div");
   div.className = "card";
   div.style = "width: 22em;";
-  
+  //put inside the document or card section which is a div being used
   section.appendChild(colDiv);
   colDiv.appendChild(div);
 
@@ -43,15 +43,15 @@ function buildMountainCard(section, mountain) {
   cardImg.alt = mountain.name;
   cardImg.src = "../images/" + mountain.img;
 
-
+ 
   let cardTitle = document.createElement("h5");
   cardTitle.className = "card-title";
   cardTitle.innerText = mountain.name;
 
- 
+  
   let desc = document.createElement("p");
   desc.innerText = mountain.desc;
-
+ 
   let elevation = document.createElement("p");
   elevation.innerText = `${mountain.elevation} ft`;
  
@@ -63,13 +63,13 @@ function buildMountainCard(section, mountain) {
   divBody.className = "card-body";
   div.append(cardImg, cardTitle, desc, elevation, addInfo);
 
-  
+  //div.appendChild(cardTitle);
 }
 
 
 
 window.onload = () => {
   loadMountSelect();
-  //onclick = loadMountSelect;
+  onclick = loadMountSelect;
   mountainField.onchange = loadMountainInfo;
 };
