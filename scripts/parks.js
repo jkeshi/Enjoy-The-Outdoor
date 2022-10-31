@@ -63,21 +63,7 @@ function buildNationalParkRow(tableBody, nationalPark) {
   let cell6 = row.insertCell(5);
   cell6.innerText = nationalPark.Phone;
 }
-// function buildLocationDataList(table, ) {
-//   let table = document.createElement("table");
-//     let locationsArrayRow = document.createElement (`tr`);
 
-//   }
-
-// function loadNationalParkList(params) {}
-
-// const parkTypesDataArray = document.getElementById("parkDataList");
-
-// function loadParkDataList() {}
-
-// const mountainsDataArray = document.getElementById("moutainsDataArrayList");
-
-// function loadMountainList() {}
 
 window.onload = () => {
   loadSearchType();
