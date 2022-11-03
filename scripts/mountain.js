@@ -70,6 +70,6 @@ function buildMountainCard(section, mountain) {
 
 window.onload = () => {
   loadMountSelect();
-  onclick = loadMountSelect;
+  // onclick = loadMountSelect;
   mountainField.onchange = loadMountainInfo;
 };
